@@ -13,6 +13,10 @@ function createGrid(gridLength = 16) {
   
     squareDiv.style.height = `${squareLength}px`;
     squareDiv.style.width = `${squareLength}px`;
+    
+    squareDiv.addEventListener("mouseenter", (event) => {
+      event.target.classList.add("hover");
+    });
     container.appendChild(squareDiv);
   }
 }
